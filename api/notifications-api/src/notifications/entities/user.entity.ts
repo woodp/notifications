@@ -1,6 +1,12 @@
-import { Column, Entity, JoinTable, ManyToMany, PrimaryColumn, Unique } from 'typeorm';
+import {
+  Column,
+  Entity,
+  JoinTable,
+  ManyToMany,
+  PrimaryColumn,
+  Unique,
+} from 'typeorm';
 import { Category } from '../../categories/entities/category.entity';
-import { NotificationType } from '../models/notification-type.enum';
 
 @Entity()
 export class User {
