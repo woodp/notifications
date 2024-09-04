@@ -1,10 +1,12 @@
 # Notifications Challenge - Gila Software
 
-## Backend Installation
+## Backend Instructions
 
 Prerequisites
 - node version 20.9.0
 - docker
+
+The backend is in folder `api/notifications-api`.
 
 1. Rename "env.example" file to ".env" and set POSTGRES_USER, POSTGRES_PASSWORD.
 The last variable sets the password for the "test" user for authentication purposes.
@@ -47,7 +49,9 @@ Documentation of the API entpoints can be found at **/api/v1/docs** (http://loca
 
 I have used [Nest](https://github.com/nestjs/nest) framework.
 
-## Front installation
+## Frontend instructions
+
+The frontend is in folder `ui`
 
 1. Rename "env.example" file to ".env" and ensure VITE_API_URL has the correct URL to the backend API.
 
