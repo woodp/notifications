@@ -1,0 +1,22 @@
+services:
+  pgdb:
+    image: postgres:16.1
+    env_file: ./.env
+    environment:
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_USER: $POSTGRES_USER
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_PORT: $POSTGRES_PORT
+      POSTGRES_HOST: $POSTGRES_HOST
+    ports:
+      - $POSTGRES_PORT:$POSTGRES_PORT
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - pgnetwork
+
+volumes:
+  postgres_data:
+
+networks:
+  pgnetwork:
