@@ -13,8 +13,8 @@ import { DeliveriesService } from './deliveries.service';
 import { SmsNotificationStrategy } from './strategies/sms-notification-strategy';
 import { EmailNotificationStrategy } from './strategies/email-notification-strategy';
 import { PushNotificationStrategy } from './strategies/push-notification-strategy';
-import { CategoriesService } from 'src/categories/categories.service';
-import { CategoriesController } from 'src/categories/categories.controller';
+import { CategoriesService } from '../categories/categories.service';
+import { CategoriesController } from '../categories/categories.controller';
 
 @Module({
   imports: [

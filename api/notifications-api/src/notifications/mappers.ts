@@ -1,5 +1,5 @@
-import { CategoryDto } from 'src/categories/dtos/category.dto';
-import { Category } from 'src/categories/entities/category.entity';
+import { CategoryDto } from '../categories/dtos/category.dto';
+import { Category } from '../categories/entities/category.entity';
 import { Notification } from './entities/notification.entity';
 import { NotificationDto } from './dtos/notification.dto';
 

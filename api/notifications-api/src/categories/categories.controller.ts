@@ -1,7 +1,7 @@
 import { Controller, Get, Logger } from '@nestjs/common';
 import { CategoriesService } from './categories.service';
-import { handleError } from 'src/errors/handle-error';
-import { Mappers } from 'src/notifications/mappers';
+import { handleError } from '../errors/handle-error';
+import { Mappers } from '../notifications/mappers';
 import { ApiResponse } from '@nestjs/swagger';
 import { CategoryDto } from './dtos/category.dto';
 

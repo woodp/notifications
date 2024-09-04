@@ -1,9 +1,9 @@
-import { User } from 'src/notifications/entities/user.entity';
+import { User } from '../src/notifications/entities/user.entity';
 import { Category } from '../src/categories/entities/category.entity';
 import { Notification } from '../src/notifications/entities/notification.entity';
 import { NotificationType } from '../src/notifications/models/notification-type.enum';
 import { v4 as uuid } from 'uuid';
-import { Message } from 'src/messages/entities/message.entity';
+import { Message } from '../src/messages/entities/message.entity';
 
 export const finance = { id: uuid(), name: 'Finance' } as Category;
 
